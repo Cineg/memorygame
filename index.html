@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Simple memory game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <p>Cards Left: </p><p id='movesLeft'></p><br>
+        <input type="button" class="btnYes" value="Restart" onclick="restart()">
+      </nav>
+      <main class="deck">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+      </main>
+      <div class ="customAlert" id="customAlert">
+        <h1> Congratulation! </h1>
+        <p class="message">You did it! I guess it wasn't that hard. Want to try again?</p>
+        <input type="button" class="btnYes" value="Yes" onclick="restart()">
+        <input type="button" class="btnNo" value="NO :(" onclick="closeBTN()">
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
